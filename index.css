@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
 
 * {
   padding: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-  color: #ac0c3f;
+  color: #1575db;
   font-size: 2.5rem;
 }
 
@@ -61,7 +61,7 @@ header .navegacao-primaria li a:hover::after {
   width: 100%;
   height: 0px;
   padding: 0px;
-  border-bottom: 4px solid #ac0c3f;
+  border-bottom: 4px solid #1575db;
 }
 
 .section-div {
@@ -161,9 +161,9 @@ main .sobre {
 
 .sobre_titulo h1 {
   font-size: 2.5rem;
-  color: #ac0c3f;
+  color: #1575db;
   margin-bottom: 15px;
-  font-family: "Berkshire Swash", cursive;
+  font-family: "Rajdhani", "sans-serif";
 }
 
 .sobre_titulo p {
@@ -184,7 +184,7 @@ main .sobre {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #ac0c3f;
+  background-color: #1575db;
 }
 
 .sobre img {
@@ -222,7 +222,7 @@ main .sobre {
 }
 
 .sobre_texto h1::after {
-  background-color: #ac0c3f;
+  background-color: #1575db;
   height: 6px;
   width: 60px;
   margin: 20px 0;
@@ -247,7 +247,7 @@ main .sobre {
 }
 
 .sobre_info i {
-  color: #ac0c3f;
+  color: #1575db;
   display: inline-block;
   padding-right: 15px;
   font-size: 1.5rem;
@@ -369,7 +369,7 @@ main .sobre {
 
 .my_services ul li i {
   font-size: 2.7rem;
-  color: #ac0c3f;
+  color: #1575db;
 }
 
 .my_services ul li h3 {
@@ -414,15 +414,15 @@ main .sobre {
 .my_services li:hover::before {
   width: 100%;
   height: 100%;
-  border-top: 2px solid #ac0c3f;
-  border-right: 2px solid #ac0c3f;
+  border-top: 2px solid #1575db;
+  border-right: 2px solid #1575db;
 }
 
 .my_services li:hover::after {
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #ac0c3f;
-  border-left: 2px solid #ac0c3f;
+  border-bottom: 2px solid #1575db;
+  border-left: 2px solid #1575db;
 }
 
 /* SEÇÃO SOBRE AS MINHAS EXPERIÊNCIAS */
@@ -442,7 +442,7 @@ main .sobre {
 .resume_generico h2 {
   font-family: "Poppins";
   font-size: 1.5rem;
-  background-color: #ac0c3f;
+  background-color: #1575db;
   justify-self: start;
   padding: 10px;
   border-radius: 5px;
@@ -469,7 +469,7 @@ main .sobre {
 }
 
 .experience_content ul {
-  color: #ac0c3f;
+  color: #1575db;
   gap: 10px;
   cursor: pointer;
   margin-top: 20px;
@@ -495,7 +495,7 @@ main .sobre {
 }
 
 .resume_generico .experience_content div span {
-  color: #ac0c3f;
+  color: #1575db;
   font-family: "Poppins";
   font-weight: bold;
 }
@@ -528,7 +528,7 @@ main .sobre {
 }
 
 .education_content ul {
-  color: #ac0c3f;
+  color: #1575db;
   gap: 10px;
   cursor: pointer;
   margin-top: 20px;
@@ -547,7 +547,7 @@ main .sobre {
 }
 
 .resume_generico .education_content div span {
-  color: #ac0c3f;
+  color: #1575db;
   font-family: "Poppins";
   font-weight: bold;
 }
