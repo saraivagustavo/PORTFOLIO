@@ -71,3 +71,18 @@ function sobreMim() {
 }
 
 sobreMim();
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("rolarTopo").style.display = "block";
+  } else {
+    document.getElementById("rolarTopo").style.display = "none";
+  }
+}
+
+document.getElementById("rolarTopo").onclick = function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

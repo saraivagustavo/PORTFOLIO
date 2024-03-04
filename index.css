@@ -666,3 +666,21 @@ footer .footer_comercial {
   margin: 90px 0;
   font-family: "Poppins";
 }
+
+#rolarTopo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #1575db;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#rolarTopo i {
+  font-size: 20px;
+}
