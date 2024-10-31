@@ -68,7 +68,7 @@ header .navegacao-primaria li a:hover::after {
   animation: inicializar 0.7s forwards;
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; 
   justify-content: space-around;
   align-items: center;
   gap: 60px;
@@ -82,25 +82,26 @@ header .navegacao-primaria li a:hover::after {
   gap: 30px;
 }
 
-.section-div div h2 {
-  font-family: "Poppins";
-  font-weight: 600;
+.section-div div h2,
+.section-div div p,
+.section-div div a {
   color: white;
+  font-family: "Poppins";
+}
+
+.section-div div h2 {
+  font-weight: 600;
 }
 
 .section-div div p {
-  font-family: "Poppins";
   font-weight: 200;
-  color: white;
 }
 
 .section-div div a {
   justify-self: start;
-  color: white;
   padding: 15px 40px;
   border-radius: 5px;
   border: 2px solid white;
-  font-family: "Poppins";
 }
 
 .section-div img {
@@ -289,6 +290,8 @@ main .sobre {
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   header {
@@ -307,8 +310,8 @@ main .sobre {
 
   header .navegacao-primaria.ativado {
     background: linear-gradient(
-      rgba(43, 42, 42, 0.176),
-      rgba(46, 46, 46, 0.724)
+      rgba(23, 23, 23, 7.176),
+      rgba(46, 46, 46, 2.724)
     );
     position: absolute;
     display: grid;
@@ -322,6 +325,24 @@ main .sobre {
     right: 20px;
     animation: sobeSecao 0.8s ease-in-out forwards;
   }
+
+  /* Estilos para o ícone do menu */
+.fa-bars {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.fa-x {
+  transform: rotate(180deg); 
+}
+
+.fa-x {
+  opacity: 1; 
+}
+
+.fa-bars {
+  opacity: 0.7; 
+}
+
 
   .sobre img {
     grid-column: 1/-1;
@@ -572,27 +593,51 @@ main .sobre {
   animation: sobeSecao 0.5s ease-in-out forwards;
 }
 
-@media (max-width: 1089px) {
-  .resume_generico .experience_content,
-  .education_content {
-    justify-self: center;
-    grid-column: 1/-1;
+@media (max-width: 768px) {
+  header {
+    padding: 15px; /* Adjust padding */
   }
 
-  .resume_generico .education {
-    grid-column: 1/-1;
-    margin-top: 30px;
-    grid-row: 3;
-    text-align: center;
-    justify-self: center;
+  header h1 {
+    font-size: 2.2rem; /* Adjust for tablets */
   }
 
-  .resume_generico .experience {
-    grid-column: 1/-1;
-    margin-top: 30px;
-    grid-row: 1;
-    text-align: center;
-    justify-self: center;
+  .section-div {
+    gap: 30px; /* Adjust gap */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .sobre img {
+    max-width: 80%; /* Limit image size */
+  }
+
+  .my_services ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align */
+  }
+
+  .my_services ul li {
+    height: auto; /* Allow flexibility */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .resume_generico {
+    grid-template-columns: 1fr; /* Stack for mobile */
+  }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .section-div {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+
+  .footer_sociais {
+    justify-content: space-around; /* Align items */
   }
 }
 
@@ -673,14 +718,19 @@ footer .footer_comercial {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  background-color: #1575db;
+  background-color: #1575db; 
   color: white;
   border: none;
-  border-radius: 30%;
+  border-radius: 8px; 
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 15px; 
+  transition: background-color 0.3s ease; 
 }
 
 #rolarTopo i {
   font-size: 20px;
+}
+
+#rolarTopo:hover {
+  background-color: rgba(128, 128, 128, 0.9);
 }

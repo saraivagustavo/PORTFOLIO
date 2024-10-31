@@ -23,6 +23,14 @@ function menuMobile() {
     ativaMenu.classList.toggle("fa-x");
     navMenu.classList.toggle("ativado");
   });
+
+  const menuItems = navMenu.querySelectorAll("li a");
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      ativaMenu.classList.remove("fa-x");
+      navMenu.classList.remove("ativado");
+    });
+  });
 }
 
 function sobreMim() {
@@ -72,17 +80,21 @@ function sobreMim() {
 
 sobreMim();
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("rolarTopo").style.display = "block";
+window.addEventListener("scroll", function() {
+  const scrollTopButton = document.getElementById("rolarTopo");
+  if (window.scrollY > 300) {
+    scrollTopButton.style.display = "block";
   } else {
-    document.getElementById("rolarTopo").style.display = "none";
+    scrollTopButton.style.display = "none";
   }
-}
+});
 
-document.getElementById("rolarTopo").onclick = function() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+document.getElementById("rolarTopo").addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
+menuMobile();
